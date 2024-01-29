@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useGetCoursesQuery } from "../redux/courseApi";
 import { setCourses } from "../redux/courseSlice";
 import { useDispatch, useSelector } from "react-redux";
+import CourseList from "./_components/CourseList";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,9 @@ const Home = () => {
     }
   }, [courses, dispatch]);
 
-  return <div className="">I Am Course List Page</div>;
+  return <div className="">
+    <CourseList/>
+  </div>;
 };
 
 export default Home;
