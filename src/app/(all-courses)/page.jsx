@@ -18,8 +18,9 @@ const Home = () => {
     }
   }, [courses, dispatch]);
 
+  
   return <div className="">
-    <CourseList/>
+    <CourseList courses={allCourses.courses}/>
   </div>;
 };
 
