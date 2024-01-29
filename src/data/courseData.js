@@ -10,6 +10,7 @@ export const courseData = [
     duration: "8 weeks", // Duration of the course
     schedule: "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
     location: "Online",
+    completionDueDate: "6/8/2114",
     prerequisites: ["Basic JavaScript knowledge", "Familiarity with React"],
     syllabus: [
       {
@@ -30,11 +31,15 @@ export const courseData = [
         id: 101,
         name: "Alice Johnson",
         email: "alice@example.com",
+        courseCompleted: true,
+        completionPercentage: 25
       },
       {
         id: 102,
         name: "Bob Smith",
         email: "bob@example.com",
+        courseCompleted: false,
+        completionPercentage: 14
       },
     ],
   },
@@ -50,6 +55,7 @@ export const courseData = [
     duration: "10 weeks",
     schedule: "Mondays and Wednesdays, 7:00 PM - 9:00 PM",
     location: "Online",
+    completionDueDate: "9/28/2099",
     prerequisites: [
       "Intermediate JavaScript knowledge",
       "Understanding of ES6",
@@ -73,11 +79,22 @@ export const courseData = [
         id: 201,
         name: "Charlie Brown",
         email: "charlie@example.com",
+        courseCompleted: false,
+        completionPercentage: 0
       },
       {
         id: 202,
         name: "Daisy Miller",
         email: "daisy@example.com",
+        courseCompleted: true,
+        completionPercentage: 50
+      },
+      {
+        id: 301,
+        name: "Eva White",
+        email: "eva@example.com",
+        courseCompleted: true,
+        completionPercentage: 45
       },
       // Additional enrolled students...
     ],
@@ -93,6 +110,7 @@ export const courseData = [
     duration: "12 weeks",
     schedule: "Tuesdays and Thursdays, 6:30 PM - 8:30 PM",
     location: "Onsite",
+    completionDueDate: "9/23/2058",
     prerequisites: ["Basic programming knowledge"],
     syllabus: [
       {
@@ -112,11 +130,15 @@ export const courseData = [
         id: 301,
         name: "Eva White",
         email: "eva@example.com",
+        courseCompleted: false,
+        completionPercentage: 34
       },
       {
         id: 302,
         name: "Frank Johnson",
         email: "frank@example.com",
+        courseCompleted: true,
+        completionPercentage: 50
       },
       // Additional enrolled students...
     ],
@@ -133,6 +155,7 @@ export const courseData = [
     duration: "14 weeks",
     schedule: "Wednesdays and Fridays, 5:00 PM - 7:00 PM",
     location: "Online",
+    completionDueDate: "5/12/2033",
     prerequisites: ["Basic knowledge of Python", "Understanding of statistics"],
     syllabus: [
       {
@@ -152,11 +175,15 @@ export const courseData = [
         id: 401,
         name: "Grace Davis",
         email: "grace@example.com",
+        courseCompleted: false,
+        completionPercentage: 22
       },
       {
         id: 402,
         name: "Harry Turner",
         email: "harry@example.com",
+        courseCompleted: true,
+        completionPercentage: 80
       },
       // Additional enrolled students...
     ],
@@ -172,6 +199,7 @@ export const courseData = [
     duration: "6 weeks",
     schedule: "Mondays, 6:00 PM - 9:00 PM",
     location: "Onsite",
+    completionDueDate: "12/24/2116",
     prerequisites: ["Basic understanding of UX design"],
     syllabus: [
       {
@@ -192,11 +220,17 @@ export const courseData = [
         id: 501,
         name: "Isaac Adams",
         email: "isaac@example.com",
+        courseCompleted: true,
+        completionPercentage: 90
+
       },
       {
         id: 502,
         name: "Jenna Carter",
         email: "jenna@example.com",
+        courseCompleted: false,
+        completionPercentage: 59
+
       },
       // Additional enrolled students...
     ],
@@ -213,6 +247,7 @@ export const courseData = [
     duration: "12 weeks",
     schedule: "Tuesdays and Thursdays, 6:30 PM - 8:30 PM",
     location: "Online",
+    completionDueDate: "3/22/2109",
     prerequisites: [
       "Basic knowledge of programming",
       "Understanding of linear algebra",
@@ -234,11 +269,17 @@ export const courseData = [
         id: 601,
         name: "Katie Robinson",
         email: "katie@example.com",
+                courseCompleted: true,
+
+                completionPercentage: 10
       },
       {
         id: 602,
         name: "Leo Parker",
         email: "leo@example.com",
+                courseCompleted: false,
+                completionPercentage: 60
+
       },
     ],
   },
@@ -253,6 +294,7 @@ export const courseData = [
     duration: "8 weeks",
     schedule: "Mondays and Wednesdays, 5:00 PM - 7:00 PM",
     location: "Online",
+    completionDueDate: "10/3/2114",
     prerequisites: ["Basic knowledge of marketing principles"],
     syllabus: [
       {
@@ -291,6 +333,7 @@ export const courseData = [
     duration: "10 weeks",
     schedule: "Thursdays, 7:00 PM - 9:00 PM",
     location: "Onsite",
+    completionDueDate: "6/5/2108",
     prerequisites: [
       "Basic understanding of computer networks",
       "Knowledge of basic security concepts",
@@ -333,6 +376,7 @@ export const courseData = [
     duration: "8 weeks",
     schedule: "Fridays, 6:00 PM - 8:00 PM",
     location: "Online",
+    completionDueDate: "5/6/2067",
     prerequisites: ["Basic programming skills", "Interest in game development"],
     syllabus: [
       {
@@ -372,6 +416,7 @@ export const courseData = [
     duration: "12 weeks",
     schedule: "Tuesdays and Thursdays, 5:30 PM - 7:30 PM",
     location: "Online",
+    completionDueDate: "3/30/2041",
     prerequisites: [
       "Basic understanding of cryptography",
       "Familiarity with distributed systems",
@@ -416,6 +461,7 @@ export const courseData = [
     duration: '14 weeks',
     schedule: 'Mondays and Wednesdays, 6:00 PM - 8:00 PM',
     location: 'Online',
+    completionDueDate: "4/15/2099",
     prerequisites: ['Understanding of machine learning basics', 'Basic programming skills'],
     syllabus: [
       {
@@ -454,6 +500,7 @@ export const courseData = [
     duration: '10 weeks',
     schedule: 'Tuesdays and Thursdays, 7:00 PM - 9:00 PM',
     location: 'Onsite',
+    completionDueDate: "10/18/2050",
     prerequisites: ['Basic knowledge of programming', 'Familiarity with mobile app development'],
     syllabus: [
       {
@@ -492,6 +539,7 @@ export const courseData = [
     duration: '12 weeks',
     schedule: 'Wednesdays and Fridays, 6:30 PM - 8:30 PM',
     location: 'Online',
+    completionDueDate: "7/21/2110",
     prerequisites: ['Understanding of linear algebra', 'Basic knowledge of computer science'],
     syllabus: [
       {
@@ -530,6 +578,7 @@ export const courseData = [
     duration: '16 weeks',
     schedule: 'Mondays and Thursdays, 6:00 PM - 9:00 PM',
     location: 'Onsite',
+    completionDueDate: "1/10/2039",
     prerequisites: ['Basic understanding of HTML, CSS, and JavaScript'],
     syllabus: [
       {
@@ -569,6 +618,7 @@ export const courseData = [
     duration: '8 weeks',
     schedule: 'Tuesdays and Thursdays, 7:00 PM - 9:00 PM',
     location: 'Online',
+    completionDueDate: "2/21/2069",
     prerequisites: ['Basic knowledge of programming', 'Interest in data science'],
     syllabus: [
       {
@@ -607,6 +657,7 @@ export const courseData = [
     duration: '10 weeks',
     schedule: 'Mondays and Wednesdays, 6:30 PM - 8:30 PM',
     location: 'Onsite',
+    completionDueDate: "2/20/2072",
     prerequisites: ['Interest in design', 'Basic knowledge of graphic design tools'],
     syllabus: [
       {
@@ -645,6 +696,7 @@ export const courseData = [
     duration: '12 weeks',
     schedule: 'Thursdays, 6:00 PM - 8:00 PM',
     location: 'Online',
+    completionDueDate: "3/7/2120",
     prerequisites: ['Basic knowledge of computer networks', 'Interest in cloud technologies'],
     syllabus: [
       {
@@ -683,6 +735,7 @@ export const courseData = [
     duration: '10 weeks',
     schedule: 'Tuesdays and Thursdays, 6:30 PM - 8:30 PM',
     location: 'Online',
+    completionDueDate: "12/8/2120",
     prerequisites: ['Basic knowledge of React', 'Familiarity with JavaScript ES6+'],
     syllabus: [
       {
@@ -721,6 +774,7 @@ export const courseData = [
     duration: '8 weeks',
     schedule: 'Mondays and Wednesdays, 7:00 PM - 9:00 PM',
     location: 'Online',
+    completionDueDate: "9/30/2080",
     prerequisites: ['Basic knowledge of software development', 'Familiarity with version control systems'],
     syllabus: [
       {
@@ -759,6 +813,7 @@ export const courseData = [
     duration: '12 weeks',
     schedule: 'Thursdays, 6:00 PM - 8:00 PM',
     location: 'Onsite',
+    completionDueDate: "10/4/2077",
     prerequisites: ['Basic knowledge of HTML, CSS, and JavaScript', 'Understanding of web development basics'],
     syllabus: [
       {
