@@ -24,14 +24,14 @@ const CourseDetails = ({ params }) => {
     <div className="grid gap-10 p-4 sm:grid-cols-2">
       {isLoading && <div>Loading...</div>}
       <div className="p-6 rounded-lg bg-secondary">
-        <div className="flex flex-col md:border-0 ">
-          <h1>{course.name}</h1>
+        <div className="flex flex-col space-y-2">
+          <h1 className="text-lg font-semibold">{course.name}</h1>
           <p>{course.description}</p>
         </div>
       </div>
 
       <div className="p-6 border-b rounded-lg bg-secondary">
-        <h2>Course Details</h2>
+        <h2 className="font-semibold">Course Details</h2>
         <div className="grid grid-cols-2 mt-4">
           {/* Col Left */}
           <div className="space-y-2">
@@ -72,21 +72,21 @@ const CourseDetails = ({ params }) => {
             </div>
           </div>
         </div>
-        <div className="mt-6">
-          <h2>Schedule</h2>
-          {course.schedule}
+        <div className="flex flex-col mt-6 space-y-1">
+          <h2 className="font-semibold">Schedule</h2>
+          <span>{course.schedule}</span>
         </div>
       </div>
 
       <div className="p-6 border-b rounded-lg bg-secondary">
-        <h2>Prerequisites</h2>
-        <div className="my-4 space-y-2">
+        <h2 className="font-semibold">Prerequisites</h2>
+        <div className="my-4 space-y-3">
           {course.prerequisites.map((prerequisite, index) => (
             <span
               key={index}
               className="flex items-center space-x-2 border-b w-max"
             >
-              {prerequisite}
+              - {prerequisite}
             </span>
           ))}
         </div>
