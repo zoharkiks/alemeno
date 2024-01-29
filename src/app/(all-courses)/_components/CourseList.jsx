@@ -3,7 +3,7 @@ import CourseCard from './CourseCard'
 
 const CourseList = () => {
   return (
-    <div>
+    <div className='p-4'>
         <CourseCard/>
     </div>
   )
