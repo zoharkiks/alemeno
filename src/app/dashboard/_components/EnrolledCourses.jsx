@@ -1,10 +1,36 @@
-import React from "react";
-import { Progress } from "@/components/ui/progress"
+import React, { useEffect } from "react";
+import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify/react";
+import { useMarkCourseAsCompleteMutation } from "@/app/redux/studentApi";
+import { markCourseAsCompleted } from "@/app/redux/studentSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { useToast } from "@/components/ui/use-toast";
 
+const EnrolledCourses = ({ course, completionPercentage, studentId }) => {
+  const dispatch = useDispatch();
+  const { toast } = useToast();
 
-const EnrolledCourses = ({course,completionPercentage}) => {
+  const [markCourseAsComplete] = useMarkCourseAsCompleteMutation();
+
+  const handleMarkComplete = async () => {
+    toast({
+      description: "Course Marked As Completed",
+    });
+
+    try {
+      // Trigger the mutation with the course ID and student ID
+      const response = await markCourseAsComplete({
+        courseId: course.id,
+        studentId,
+      }).unwrap();
+      dispatch(markCourseAsCompleted({ courseId: course.id, studentId }));
+    } catch (error) {
+      // Handle the error case
+      console.error("Failed to mark course as complete:", error);
+    }
+  };
+
   return (
     <div className="p-6 space-y-4 border rounded-lg bg-secondary">
       <h3>{course.name}</h3>
@@ -15,9 +41,9 @@ const EnrolledCourses = ({course,completionPercentage}) => {
       ></img>
       <span>Due Date: {course.completionDueDate}</span>
       <Progress value={completionPercentage} />
-<Button >
-<Icon className="mr-2 " icon="fluent-mdl2:completed" /> Mark Complete
-</Button>
+      <Button onClick={handleMarkComplete}>
+        <Icon className="mr-2 " icon="fluent-mdl2:completed" /> Mark Complete
+      </Button>
     </div>
   );
 };

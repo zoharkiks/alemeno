@@ -2,35 +2,43 @@ import { courseData } from "@/data/courseData"; // Adjust the import path to whe
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
-    try {
-        const { courseId, studentId } = await req.json();
+  try {
+    const { courseId, studentId } = await req.json();
 
-         // Find the course and student to update
-      const course = courseData.find((c) => c.id === courseId);
-      console.log(course);
-
-      if (course) {
-        const studentIndex = course.students.findIndex((s) => s.id === studentId);
-        if (studentIndex > -1) {
+    // Find the course and student to update
+    const course = courseData.find((c) => c.id === courseId);
+    if (course) {
+      const studentIndex = course.students.findIndex((s) => s.id === studentId);
+      if (studentIndex > -1) {
+        if (!course.students[studentIndex].courseCompleted) {
           // Update the student's `courseCompleted` status
           course.students[studentIndex].courseCompleted = true; // This should be persisted in a database
-
           // Return a success response with the updated student info
-          NextResponse.json(course.students[studentIndex], { status: 200 });
-
+          return NextResponse.json(course.students[studentIndex], {
+            status: 200,
+          });
         } else {
-          // Student not found
-          NextResponse.json({message:"Student not found"}, { status: 404 });
+          // Student has already completed the course
+          return NextResponse.json(
+            { message: "Student has already completed the course" },
+            { status: 409 }
+          );
         }
       } else {
-        // Course not found
-        NextResponse.json({message:"Course not found"}, { status: 404 });
-
+        // Student not found
+        return NextResponse.json(
+          { message: "Student not found" },
+          { status: 404 }
+        );
       }
-      
-
-        return NextResponse.json({message: "Success"});
-    } catch (error) {
-        console.log(error);
+    } else {
+      // Course not found
+      return NextResponse.json(
+        { message: "Course not found" },
+        { status: 404 }
+      );
     }
+  } catch (error) {
+    console.log(error);
+  }
 }

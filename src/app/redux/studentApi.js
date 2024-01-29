@@ -10,8 +10,15 @@ export const studentApi = createApi({
       query: (studentId) => `${studentId}`,
      
     }),
+    markCourseAsComplete: builder.mutation({
+      query: ({ courseId, studentId }) => ({
+        url: `/courses/complete`, // Adjusted endpoint without URL parameters
+        method: 'POST',
+        body: { courseId, studentId }, // Include both IDs in the body
+      }),
+    }),
   }),
 });
 
 // Export the auto-generated hook for the endpoint
-export const { useGetEnrolledCoursesQuery } = studentApi;
+export const { useGetEnrolledCoursesQuery , useMarkCourseAsCompleteMutation } = studentApi;

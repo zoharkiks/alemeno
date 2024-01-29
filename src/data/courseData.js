@@ -93,7 +93,7 @@ export const courseData = [
         id: 301,
         name: "Eva White",
         email: "eva@example.com",
-        courseCompleted: true,
+        courseCompleted: false,
         completionPercentage: 45
       },
       // Additional enrolled students...
@@ -137,7 +137,7 @@ export const courseData = [
         id: 302,
         name: "Frank Johnson",
         email: "frank@example.com",
-        courseCompleted: true,
+        courseCompleted: false,
         completionPercentage: 50
       },
       // Additional enrolled students...

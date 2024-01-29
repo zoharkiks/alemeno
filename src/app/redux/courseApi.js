@@ -10,8 +10,10 @@ export const courseApi = createApi({
     getCourseById: builder.query({
       query: (id) => `/courses/${id}`,
     }),
-    // You can add more endpoints as needed
+    
   }),
+
+  
 });
 
 export const { useGetCoursesQuery, useGetCourseByIdQuery } = courseApi;
