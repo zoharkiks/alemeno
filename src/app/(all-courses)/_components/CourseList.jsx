@@ -27,7 +27,7 @@ const CourseList = ({ courses }) => {
         onChange={handleSearchChange}
       />
 
-      <div className="grid gap-y-6">
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
       {filteredCourses.map((course) => (
           <CourseCard key={course.id} course={course} />
         ))}

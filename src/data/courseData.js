@@ -405,4 +405,386 @@ export const courseData = [
       // Additional enrolled students...
     ],
   },
+
+  {
+    id: 11,
+    name: 'Artificial Neural Networks',
+    instructor: 'Dr. Rachel Hernandez',
+    description: 'In-depth study of artificial neural networks and their applications in machine learning.',
+    enrollmentStatus: 'Open',
+    thumbnail: 'your.image.here',
+    duration: '14 weeks',
+    schedule: 'Mondays and Wednesdays, 6:00 PM - 8:00 PM',
+    location: 'Online',
+    prerequisites: ['Understanding of machine learning basics', 'Basic programming skills'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Introduction to Neural Networks',
+        content: 'Overview of neural network architecture and components.',
+      },
+      {
+        week: 2,
+        topic: 'Training Neural Networks',
+        content: 'Training and optimizing artificial neural networks.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1101,
+        name: 'Victor Lee',
+        email: 'victor@example.com',
+      },
+      {
+        id: 1102,
+        name: 'Wendy Baker',
+        email: 'wendy@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+  {
+    id: 12,
+    name: 'iOS App Development',
+    instructor: 'Alexandra Turner',
+    description: 'Learn to develop native iOS applications using Swift and Xcode.',
+    enrollmentStatus: 'Open',
+    thumbnail: 'your.image.here',
+    duration: '10 weeks',
+    schedule: 'Tuesdays and Thursdays, 7:00 PM - 9:00 PM',
+    location: 'Onsite',
+    prerequisites: ['Basic knowledge of programming', 'Familiarity with mobile app development'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Introduction to iOS Development',
+        content: 'Overview of iOS development tools and environment.',
+      },
+      {
+        week: 2,
+        topic: 'Building User Interfaces with Swift',
+        content: 'Creating responsive user interfaces using Swift programming language.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1201,
+        name: 'Xander Hill',
+        email: 'xander@example.com',
+      },
+      {
+        id: 1202,
+        name: 'Yara Foster',
+        email: 'yara@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+  {
+    id: 13,
+    name: 'Quantum Computing Essentials',
+    instructor: 'Dr. William Adams',
+    description: 'Introduction to quantum computing principles and algorithms.',
+    enrollmentStatus: 'Closed',
+    thumbnail: 'your.image.here',
+    duration: '12 weeks',
+    schedule: 'Wednesdays and Fridays, 6:30 PM - 8:30 PM',
+    location: 'Online',
+    prerequisites: ['Understanding of linear algebra', 'Basic knowledge of computer science'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Introduction to Quantum Computing',
+        content: 'Overview of quantum computing concepts and quantum bits (qubits).',
+      },
+      {
+        week: 2,
+        topic: 'Quantum Algorithms',
+        content: 'Exploring algorithms designed for quantum computers.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1301,
+        name: 'Zara Patel',
+        email: 'zara@example.com',
+      },
+      {
+        id: 1302,
+        name: 'Aaron Turner',
+        email: 'aaron@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+  {
+    id: 14,
+    name: 'Full-Stack Web Development Bootcamp',
+    instructor: 'Chris Miller',
+    description: 'Comprehensive bootcamp covering both front-end and back-end web development.',
+    enrollmentStatus: 'Open',
+    thumbnail: 'your.image.here',
+    duration: '16 weeks',
+    schedule: 'Mondays and Thursdays, 6:00 PM - 9:00 PM',
+    location: 'Onsite',
+    prerequisites: ['Basic understanding of HTML, CSS, and JavaScript'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Front-End Development Basics',
+        content: 'Introduction to HTML, CSS, and JavaScript for building interactive web interfaces.',
+      },
+      {
+        week: 2,
+        topic: 'Back-End Development with Node.js',
+        content: 'Building server-side applications using Node.js and Express.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1401,
+        name: 'Elijah Carter',
+        email: 'elijah@example.com',
+      },
+      {
+        id: 1402,
+        name: 'Sofia Foster',
+        email: 'sofia@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+
+  {
+    id: 15,
+    name: 'Python for Data Science',
+    instructor: 'Dr. Olivia Martinez',
+    description: 'Learn Python programming for data analysis and machine learning applications.',
+    enrollmentStatus: 'Open',
+    thumbnail: 'your.image.here',
+    duration: '8 weeks',
+    schedule: 'Tuesdays and Thursdays, 7:00 PM - 9:00 PM',
+    location: 'Online',
+    prerequisites: ['Basic knowledge of programming', 'Interest in data science'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Introduction to Python',
+        content: 'Overview of Python programming language and its syntax.',
+      },
+      {
+        week: 2,
+        topic: 'Data Analysis with Pandas',
+        content: 'Using the Pandas library for data manipulation and analysis.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1501,
+        name: 'Liam Adams',
+        email: 'liam@example.com',
+      },
+      {
+        id: 1502,
+        name: 'Sophie Turner',
+        email: 'sophie@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+  {
+    id: 16,
+    name: 'UX/UI Design Principles',
+    instructor: 'Emily Davis',
+    description: 'Master the principles of user experience (UX) and user interface (UI) design.',
+    enrollmentStatus: 'In Progress',
+    thumbnail: 'your.image.here',
+    duration: '10 weeks',
+    schedule: 'Mondays and Wednesdays, 6:30 PM - 8:30 PM',
+    location: 'Onsite',
+    prerequisites: ['Interest in design', 'Basic knowledge of graphic design tools'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Introduction to UX/UI Design',
+        content: 'Understanding the fundamentals of user experience and user interface design.',
+      },
+      {
+        week: 2,
+        topic: 'Wireframing and Prototyping',
+        content: 'Creating wireframes and interactive prototypes for digital products.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1601,
+        name: 'Oliver Hill',
+        email: 'oliver@example.com',
+      },
+      {
+        id: 1602,
+        name: 'Emma Parker',
+        email: 'emma@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+  {
+    id: 17,
+    name: 'Cloud Computing Fundamentals',
+    instructor: 'Dr. Isaac Robinson',
+    description: 'Explore the basics of cloud computing and popular cloud platforms.',
+    enrollmentStatus: 'Open',
+    thumbnail: 'your.image.here',
+    duration: '12 weeks',
+    schedule: 'Thursdays, 6:00 PM - 8:00 PM',
+    location: 'Online',
+    prerequisites: ['Basic knowledge of computer networks', 'Interest in cloud technologies'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Introduction to Cloud Computing',
+        content: 'Overview of cloud computing concepts and deployment models.',
+      },
+      {
+        week: 2,
+        topic: 'Amazon Web Services (AWS)',
+        content: 'Exploring cloud services on the AWS platform.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1701,
+        name: 'Ava Garcia',
+        email: 'ava@example.com',
+      },
+      {
+        id: 1702,
+        name: 'Noah Baker',
+        email: 'noah@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+  {
+    id: 18,
+    name: 'React Native Mobile App Development',
+    instructor: 'Sarah Turner',
+    description: 'Build cross-platform mobile apps with React Native for iOS and Android.',
+    enrollmentStatus: 'Open',
+    thumbnail: 'your.image.here',
+    duration: '10 weeks',
+    schedule: 'Tuesdays and Thursdays, 6:30 PM - 8:30 PM',
+    location: 'Online',
+    prerequisites: ['Basic knowledge of React', 'Familiarity with JavaScript ES6+'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Introduction to React Native',
+        content: 'Overview of React Native and its advantages for mobile app development.',
+      },
+      {
+        week: 2,
+        topic: 'Building UI Components',
+        content: 'Creating reusable UI components for React Native applications.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1801,
+        name: 'Mia Foster',
+        email: 'mia@example.com',
+      },
+      {
+        id: 1802,
+        name: 'Liam Adams',
+        email: 'liam@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+  {
+    id: 19,
+    name: 'DevOps Essentials',
+    instructor: 'Dr. Ethan White',
+    description: 'Learn essential DevOps practices for improving collaboration and efficiency.',
+    enrollmentStatus: 'In Progress',
+    thumbnail: 'your.image.here',
+    duration: '8 weeks',
+    schedule: 'Mondays and Wednesdays, 7:00 PM - 9:00 PM',
+    location: 'Online',
+    prerequisites: ['Basic knowledge of software development', 'Familiarity with version control systems'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Introduction to DevOps',
+        content: 'Understanding the principles and benefits of DevOps.',
+      },
+      {
+        week: 2,
+        topic: 'Continuous Integration and Deployment',
+        content: 'Implementing CI/CD pipelines for automated software delivery.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 1901,
+        name: 'Logan Turner',
+        email: 'logan@example.com',
+      },
+      {
+        id: 1902,
+        name: 'Aria Mitchell',
+        email: 'aria@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
+  {
+    id: 20,
+    name: 'E-commerce Website Development',
+    instructor: 'Chris Davis',
+    description: 'Build scalable and secure e-commerce websites using modern web technologies.',
+    enrollmentStatus: 'Open',
+    thumbnail: 'your.image.here',
+    duration: '12 weeks',
+    schedule: 'Thursdays, 6:00 PM - 8:00 PM',
+    location: 'Onsite',
+    prerequisites: ['Basic knowledge of HTML, CSS, and JavaScript', 'Understanding of web development basics'],
+    syllabus: [
+      {
+        week: 1,
+        topic: 'Setting Up an E-commerce Project',
+        content: 'Planning and setting up a project for e-commerce website development.',
+      },
+      {
+        week: 2,
+        topic: 'Implementing Shopping Cart Functionality',
+        content: 'Building features for adding products to a shopping cart and managing orders.',
+      },
+      // Additional weeks and topics...
+    ],
+    students: [
+      {
+        id: 2001,
+        name: 'Eva Turner',
+        email: 'eva@example.com',
+      },
+      {
+        id: 2002,
+        name: 'Owen Baker',
+        email: 'owen@example.com',
+      },
+      // Additional enrolled students...
+    ],
+  },
 ];
