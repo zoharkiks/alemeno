@@ -3,13 +3,18 @@
 import React, { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input"
 import CourseCard from "./CourseCard";
-import useInfiniteScroll from '@/utils/useInfiniteScroll';
+import useInfiniteScroll from '@/hooks/useInfiniteScroll';
+import useDebounce from "@/hooks/useDebounce";
 
 
 const CourseList = ({ courses }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [displayCount, setDisplayCount] = useInfiniteScroll(3, 3); 
+  const debouncedSearchTerm = useDebounce(searchTerm, 500); 
 
+
+  useEffect(() => {
+  }, [debouncedSearchTerm]);
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -17,8 +22,8 @@ const CourseList = ({ courses }) => {
 
   const filteredCourses = courses.filter(
     (course) =>
-      course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      course.instructor.toLowerCase().includes(searchTerm.toLowerCase())
+      course.name.toLowerCase().includes(debouncedSearchTerm.toLowerCase()) ||
+      course.instructor.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
   );
 
   

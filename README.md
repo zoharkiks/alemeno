@@ -12,12 +12,16 @@ This  app provides an intuitive interface for students to view their enrolled co
 - Track course completion progress
 - Mark courses as completed
 - Responsive design for desktop and mobile devices
+- Debounced search functionality for course filtering
+
 
 ## Technology Stack
 
 - **Frontend**: Next.js, Redux Toolkit
 - **Database**: Local Database
 - **Styling**: Tailwind CSS 
+- **Utilities**: Custom Hooks (e.g., useDebounce for optimizing search)
+
 
 ## Installation
 
