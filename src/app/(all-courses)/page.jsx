@@ -18,7 +18,7 @@ const Home = () => {
     }
   }, [courses, dispatch]);
 
-  
+  // TODO - Add Pagination
   return <div className="">
     <CourseList courses={allCourses.courses}/>
   </div>;

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { Input } from "@/components/ui/input"
 import CourseCard from "./CourseCard";
 
 const CourseList = ({ courses }) => {
@@ -20,12 +21,18 @@ const CourseList = ({ courses }) => {
 
   return (
     <div className="p-4">
-      <input
+      {/* <input
         type="text" 
         placeholder="Search courses..."
         value={searchTerm}
         onChange={handleSearchChange}
-      />
+      /> */}
+
+      <div className="flex justify-center w-full">
+      <Input className='mb-10 w-max'  type='text' placeholder="Search courses..." value={searchTerm} onChange={handleSearchChange}/>
+
+      </div>
+
 
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
       {filteredCourses.map((course) => (
