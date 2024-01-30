@@ -1,4 +1,4 @@
-# Project Title
+# Alemeno Internship Assessment 
 
 Welcome to the GitHub repository of my project for the internship assessment. This application is built with modern web technologies and showcases my skills in full-stack development, including a dashboard for student course management.
 
