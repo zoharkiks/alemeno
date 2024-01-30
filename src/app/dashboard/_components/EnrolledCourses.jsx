@@ -16,6 +16,7 @@ const EnrolledCourses = ({ course, completionPercentage, studentId }) => {
   const handleMarkComplete = async () => {
     toast({
       description: "Course Marked As Completed",
+      className:'bg-green-500 text-white font-bold'
     });
 
     try {

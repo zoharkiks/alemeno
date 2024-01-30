@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import EnrolledCourses from "../_components/EnrolledCourses";
 
+
 const Dashboard = () => {
   const dispatch = useDispatch();
   const studentId = 301;
